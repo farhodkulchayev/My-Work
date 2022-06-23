@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,h6, p {
 
 .all-btn {
     background: var(--primary-color);
-    color: #fff;
+    color: #fff !important;
     font-size: 18px;
     padding: 12px 0;
     display: inline-block;
@@ -64,3 +64,13 @@ h1,h2,h3,h4,h5,h6, p {
 .logo::before {
     content: url(../img/svg/logo-light.svg);
 }
+
+/* header start */
+
+.header__nav-link {
+    font-size: 24px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+/* header end */
