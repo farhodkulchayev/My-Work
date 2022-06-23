@@ -1,0 +1,66 @@
+@import url(fonts.css);
+
+:root {
+    --primary-color: #7177F1;
+    --body: #fff;
+    --txt-color: #323232;
+    --dots: #828282;
+    --dots-active: #7177F1;
+    --tab-txt: #fff;
+    --footer-link: #7177F1;
+    --primary-font: "Montserrat";
+    --secodary-font: "Trebuchet";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--body);
+    font-family: var(--primary-font);
+    color: var(--txt-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+}
+
+.all-btn {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 0;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    width: 190px;
+    transition: .5s;
+}
+
+.all-btn:hover {
+    color: #fff;
+    background: #790FF1;
+}
+
+.title {
+    /* font-size: 40px; */
+    font-size: calc(28px + 12 * (100vw / 1920));
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.logo::before {
+    content: url(../img/svg/logo-light.svg);
+}
