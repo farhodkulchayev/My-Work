@@ -73,4 +73,63 @@ h1,h2,h3,h4,h5,h6, p {
     text-transform: capitalize;
 }
 
+.header__nav-link:hover {
+    color: var(--primary-color);
+}
+
+.header__menu {
+    width: 40px;
+    height: 2px;
+    position: relative;
+    padding: 0;
+    transition: .5s;
+    border: none;
+}
+
+.header__menu.collapsed {
+    background: var(--txt-color);
+}
+
+.header__menu:focus {
+    box-shadow: unset;
+}
+
+.header__menu::before,
+.header__menu::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--txt-color);
+    transition: .5s;
+}
+
+.header__menu::before {
+    top: -10px;
+}
+
+.header__menu::after {
+    top: 10px;
+}
+
+.header__menu:not(.collapsed)::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header__menu:not(.collapsed)::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* header end */
