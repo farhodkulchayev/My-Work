@@ -122,12 +122,59 @@ h1,h2,h3,h4,h5,h6, p {
     top: 0;
 }
 
+.header__carousel-image {
+    min-height: 500px;
+    max-height: 500px;
+}
 
+.header__content-subtitle {
+    color: var(--txt-color);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.header__content-title {
+    margin-bottom: 25px;
+}
 
+.header__content-btn {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 50px;
+}
 
+.header__tech-card {
+    display: grid;
+    place-items: center;
+    row-gap: 15px;
+}
 
+.header__tech-name {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
 
+.header__tech-card:nth-child(1) .header__tech-brand {
+    color: #E44F26;
+}
+
+.header__tech-card:nth-child(2) .header__tech-brand {
+    color: #1572B6;
+}
+
+.header__tech-card:nth-child(3) .header__tech-brand {
+    color: #790FF1;
+}
+
+.header__carousel-indicators {
+    position: static;
+    order: 1;
+    margin: 50px 0 0;
+    column-gap: 30px;
+}
 
 
 
