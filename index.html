@@ -13,8 +13,8 @@
 <body>
     
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg pt-4 pb-4">
+            <div class="container navbar__container">
               <a class="navbar-brand header__logo logo" href="#"></a>
               <button class="navbar-toggler header__menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,34 +37,34 @@
         </nav>
         <div class="header__content">
           <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide row" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide row justify-content-center gap-4 gap-xl-0" data-bs-ride="carousel">
               <div class="carousel-indicators header__carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active header__carousel-dot" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="header__carousel-dot"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="header__carousel-dot"></button>
               </div>
-              <div class="col-xl-6">
-                <div class="col-xl-10 header__content-desc ms-auto">
+              <div class="col-lg-8 col-xl-6">
+                <div class="col-xl-10 header__content-desc ms-auto text-center text-xl-start">
                   <p class="header__content-subtitle">My beginning</p>
                   <h1 class="header__content-title title">Self-development and training in the training center</h1>
                   <a href="#!" class="header__content-btn all-btn">GET STARTED NOW</a>
                 </div>
                 <div class="row header__tech">
-                  <div class="col-xl-4 header__tech-card">
+                  <div class="col-6 col-sm-4 header__tech-card mb-3 mb-xl-0">
                     <i class="header__tech-brand fab fa-html5 fa-5x"></i>
                     <span class="header__tech-name text-uppercase">html</span>
                   </div>
-                  <div class="col-xl-4 header__tech-card">
+                  <div class="col-6 col-sm-4 header__tech-card mb-3 mb-xl-0">
                     <i class="header__tech-brand fab fa-css3-alt fa-5x"></i>
                     <span class="header__tech-name text-uppercase">css</span>
                   </div>
-                  <div class="col-xl-4 header__tech-card">
+                  <div class="col-sm-4 header__tech-card">
                     <i class="header__tech-brand fab fa-bootstrap fa-5x"></i>
                     <span class="header__tech-name text-uppercase">bootstrap 5</span>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
+              <div class="col-lg-8 col-xl-6">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="img/slide_1.png" class="d-block w-100 header__carousel-image" alt="slide">
@@ -81,6 +81,33 @@
           </div>
         </div>
     </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="about__image text-center">
+                <p class="about__work all-btn">my work for <span class="about__work-span">5+</span></p>
+                <img src="img/about.png" alt="" class="about__photo">
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="about__desc">
+                <h2 class="about__desc-title title"></h2>
+                <p class="about__desc-txt">
+                  it is the development of of the user interface and functions that run on on the client side of a website or application
+                  This is everything that a user sees when opening a or aweb page and with which he interacts.
+                  <br>
+                  <br>
+                  This is everything that a user sees when opening a web page and with which he interacts.
+                </p>
+                <a href="#!" class="about__desc-btn all-btn">go to work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     
     <script src="libs/bootstrap.js"></script>
 </body>

@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6, p {
     text-align: center;
     width: 190px;
     transition: .5s;
+    text-transform: uppercase;
 }
 
 .all-btn:hover {
@@ -63,6 +64,17 @@ h1,h2,h3,h4,h5,h6, p {
 
 .logo::before {
     content: url(../img/svg/logo-light.svg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    
+    1% {
+        transform: rotate(360deg);
+        background: red;
+    }
 }
 
 /* header start */
@@ -123,7 +135,6 @@ h1,h2,h3,h4,h5,h6, p {
 }
 
 .header__carousel-image {
-    min-height: 500px;
     max-height: 500px;
 }
 
@@ -176,7 +187,78 @@ h1,h2,h3,h4,h5,h6, p {
     column-gap: 30px;
 }
 
+.header__carousel-dot {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: var(--dots) !important;
+    opacity: unset !important;
+    margin: 0 !important;
+}
+
+.header__carousel-dot.active {
+    background-color: var(--dots-active) !important;
+}
+
+.navbar__container {
+    position: relative;
+}
 
 
+
+.navbar__container::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: -5%;
+    width: 59px;
+    height: 66px;
+    border-radius: 50%;
+    border: 5px solid #790FF1;
+    z-index: -1;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-play-state: paused; */
+    animation: rotate 3s linear infinite;
+}
+
+.navbar__container::after {
+    content: '';
+    position: absolute;
+    top: 150%;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border: 5px solid 
+    #9297EF;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+}
 
 /* header end */
+
+/* main start */
+
+/* about start */
+
+.about {
+    padding: 80px 0;
+}
+
+.about__work {
+    font-size: 18px;
+    display: block;
+}
+
+.about__work:hover {
+    background: #fff;
+    color: #323232 !important;
+    
+}
+
+
+
+
+/* about end */
+
+
+/* main end */
