@@ -13,7 +13,13 @@
 }
 
 @media (max-width: 767px) {
+    
     .title {
         font-size: calc(28px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
     }
+    
+    .about__photo {
+        width: 100%;
+    }
+    
 }
