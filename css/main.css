@@ -364,4 +364,73 @@ h1,h2,h3,h4,h5,h6, p {
 
 /* capabilites end */
 
+/* works start */
+
+.works {
+    padding-bottom: 220px;
+}
+
+.works__title {
+    margin-bottom: 30px;
+}
+
+.works__list {
+    border-radius: 8px;
+}
+
+.works__list-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 16.5px;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    background: var(--body);
+    border: 0;
+    transition: .5s;
+}
+
+.works__list-link.active {
+    background: var(--primary-color);
+    color: var(--txt-color);
+}
+
+.list-group-item+.list-group-item.active {
+    margin: 0;
+    border: 0;
+}
+
+.works__tab {
+    padding: 20px;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    background: var(--body);
+}
+
+.works__tab-image {
+    border-radius: 8px;
+    object-fit: cover;
+    min-height: 320px;
+    max-height: 320px;
+    object-position: top;
+}
+
+.works__tab-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.works__tab-txt {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.works__tab-btn {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* works end */
+
 /* main end */
